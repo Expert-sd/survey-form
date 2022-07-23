@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel='stylesheet' type='text/css' href='style.css' />
+  </head>
+  <body>
+    <div class="bg-image"></div>
+    <fieldset>
+      <h1 id='title'>EazyPass Survey Form</h1>
+      <p id='description'><i>Thank you for taking your time to respond to our survey. Your participation will help us improve a lot.</i></p>
+    </fieldset>
+          <form id='survey-form'>
+            <fieldset>
+              <label id='name-label' class='space'>Name: <input id='name' type='text' placeholder='Adam Smith' required></label>
+              <label id='email-label' class='space'>Email: <input id='email' type='text' placeholder='adam@domain.com' required></label>
+              <label id='number-label' class='space'>Age (Optional): <input id='number' min='15' max='60' placeholder='18' pattern='[0-9]{2}'></label>
+            </fieldset>
+            <fieldset>
+              <label class='space'>Which best describe your current level of education? 
+                <select>
+                  <option>(Select only one)</option>
+                  <option>High school</option>
+                  <option>College/University</option>
+                  <option>Post-graduate</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <label class='space'>How would you rate EazyPass?
+                <label><input type='radio' name='radio' class='position' checked> Satisfied</label>
+                <label><input type='radio' name='radio' class='position'> Not sure</label>
+                <label><input type='radio' name='radio' class='position'> Dissatisfied</label>
+              </label>
+            </fieldset>
+            <fieldset>
+              <label class='space'>What would you like to see improved with EazyPass?
+                <label><input type='checkbox' value='1' class='position'> User support</label>
+                <label><input type='checkbox' value='2' class='position'> Site navigation</label>
+                <label><input type='checkbox' value='3' class='position'> Lecture videos</label>
+                <label><input type='checkbox' value='4' class='position'> Lecture notes</label>
+                <label><input type='checkbox' value='5' class='position'> Forum</label>
+                <label><input type='checkbox' value='6' class='position'> Assignments</label> 
+              </label>
+            </fieldset>
+            <fieldset>
+              <label>Any comments or suggestions?
+                <textarea name='comments'></textarea>
+              </label>
+            </fieldset>
+            <fieldset>
+              <input id='submit' value='Submit'>
+            </fieldset>
+       </form>
+  </body>
+</html>
